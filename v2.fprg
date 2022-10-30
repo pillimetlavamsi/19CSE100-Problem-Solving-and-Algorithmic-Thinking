@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pardu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 02:40:06 PM"/>
+        <attribute name="created" value="cGFyZHU7UEFSREhVUEM7MjAyMi0xMC0zMDswMTozODo0OCBQTTsyNDE3"/>
+        <attribute name="edited" value="cGFyZHU7UEFSREhVUEM7MjAyMi0xMC0zMDswMjo0MDowNiBQTTszOzI1MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rollno, phonenumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the rollno&quot;" newline="True"/>
+            <input variable="rollno"/>
+            <declare name="name, address, department, bloodgroup" type="String" array="False" size=""/>
+            <output expression="&quot;enter the name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;enter the address&quot;" newline="True"/>
+            <input variable="address"/>
+            <output expression="&quot;enter the phonenubmer&quot;" newline="True"/>
+            <input variable="phonenumber"/>
+            <output expression="&quot;enter the bloodgroup&quot;" newline="True"/>
+            <input variable="bloodgroup"/>
+            <output expression="&quot;enter the department&quot;" newline="True"/>
+            <input variable="department"/>
+            <output expression="&quot;your roll no is &quot;&amp;rollno&amp;&quot;your name is &quot;&amp;name&amp;&quot;your address is &quot;&amp;address&amp;&quot;your phone number is &quot;&amp;phonenumber&amp;&quot;your blood group is&quot;&amp; bloodgroup &amp;&quot;your department is&quot;&amp;department" newline="True"/>
+            <declare name="sem, ns, m, tot, avg" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the whichsem&quot;" newline="True"/>
+            <input variable="sem"/>
+            <output expression="&quot;enter the ns&quot;" newline="True"/>
+            <input variable="ns"/>
+            <output expression="&quot;enter the marks&quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;enter the total&quot;" newline="True"/>
+            <input variable="tot"/>
+            <assign variable="avg" expression="tot/ns"/>
+            <output expression="&quot;your average is&quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
