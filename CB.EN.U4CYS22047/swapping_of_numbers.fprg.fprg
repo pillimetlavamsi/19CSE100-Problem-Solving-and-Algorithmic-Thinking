@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22047"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:10:44 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NzsyMDIyMjNNQVlDMDA4NDsyMDIyLTExLTA0OzEwOjQ0OjIxIEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NzsyMDIyMjNNQVlDMDA4NDsyMDIyLTExLTA0OzExOjEwOjQ0IEFNOzY7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="swapping the values of a,b without interferance from another variable"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the  value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <output expression="&quot;b=&quot;&amp;b" newline="True"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;a=&quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

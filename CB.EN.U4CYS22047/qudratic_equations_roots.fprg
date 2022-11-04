@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22047"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:12:24 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NzsyMDIyMjNNQVlDMDA4NDsyMDIyLTExLTA0OzA5OjU0OjA0IEFNOzMwNjc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NzsyMDIyMjNNQVlDMDA4NDsyMDIyLTExLTA0OzExOjEyOjI0IEFNOzM7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="considering a,b,c are co efficients of x^2,x,constant in a quadratic equation"/>
+            <output expression="&quot;enter the  coeffiecent for x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the  coefficient for  x&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter the value for constant&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="result1" type="Integer" array="False" size=""/>
+            <comment text="applying formula to solve the roots of quadratic equation"/>
+            <assign variable="result1" expression="-b+SQRT(b^2-4*a*c)/2*a"/>
+            <declare name="result2" type="Integer" array="False" size=""/>
+            <assign variable="result2" expression="-b-SQRT(b^2-4*a*c)/2*a"/>
+            <output expression="&quot;result1=&quot;&amp;result1" newline="True"/>
+            <output expression="&quot;result2=&quot;&amp;result2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
