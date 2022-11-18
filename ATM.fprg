@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="vamsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:26:20 PM"/>
+        <attribute name="created" value="dmFtc2k7VkFNU0lfUEM7MjAyMi0xMS0xODswOToyMzo1MCBQTTsyNDUw"/>
+        <attribute name="edited" value="dmFtc2k7VkFNU0lfUEM7MjAyMi0xMS0xODsxMToyNjoyMCBQTTsxOzI1NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring of AccountNumber,Pin,Pin1,Withdrawl,Deposit,Balance,NewBalance,Newpin"/>
+            <declare name="AccountNumber, Pin, Pin1, Withdrawal, Deposit, Balance, NewBalance, Newpin" type="Integer" array="False" size=""/>
+            <output expression="&quot;Welcome to union bank&quot;" newline="True"/>
+            <output expression="&quot;Please enter your Account Number&quot;" newline="True"/>
+            <input variable="AccountNumber"/>
+            <assign variable="Balance" expression="5000"/>
+            <assign variable="Pin" expression="1111"/>
+            <output expression="&quot;please enter your Account Pin&quot;" newline="True"/>
+            <input variable="Pin1"/>
+            <comment text="if the pin is correct it gives to select choices what user wants and if pin is incorrect it asks again to enter correct pin"/>
+            <if expression="Pin==Pin1">
+                <then>
+                    <output expression="&quot;click option1 for withdrawl&quot;" newline="True"/>
+                    <output expression="&quot;click option2 for deposit&quot;" newline="True"/>
+                    <output expression="&quot;click option3 for changing pin&quot;" newline="True"/>
+                    <output expression="&quot;click option4 for bank balance&quot;" newline="True"/>
+                    <comment text="if option1 is selected it moves to way for withdrawing and if option2 is selected it moves to way for depositing and if option3 is selected it moves to changepin and if option4 is selected it shows your balance"/>
+                    <declare name="x" type="Integer" array="False" size=""/>
+                    <input variable="x"/>
+                    <if expression="x==1">
+                        <then>
+                            <comment text="if balance is more than 500 it asks  user how much amount he wants to withdraw and if balane is less than 500 it shows your transaction is cancelled"/>
+                            <if expression="Balance&gt;500">
+                                <then>
+                                    <declare name="Amount" type="Integer" array="False" size=""/>
+                                    <output expression="&quot;please enter how much Amount you want to withdraw&quot;" newline="True"/>
+                                    <input variable="Amount"/>
+                                    <assign variable="NewBalance" expression="Balance-Amount"/>
+                                    <output expression="&quot;your NewBalance is &quot;&amp;NewBalance" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;your transaction is cancelled&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="x==2">
+                                <then>
+                                    <output expression="&quot;enter how much money yoou want to deposit&quot;" newline="True"/>
+                                    <input variable="Deposit"/>
+                                    <assign variable="NewBalance" expression="Deposit+Balance"/>
+                                    <output expression="&quot;your new account balance is &quot;&amp;NewBalance" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="x==3">
+                                        <then>
+                                            <output expression="&quot;enter your New Pin&quot;" newline="True"/>
+                                            <input variable="NewPin"/>
+                                            <output expression="&quot;please enter NewPin again to conform&quot;" newline="True"/>
+                                            <input variable="NewPin"/>
+                                        </then>
+                                        <else>
+                                            <if expression="x==4">
+                                                <then>
+                                                    <output expression="&quot;your bank Balance is &quot; &amp;Balance" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;please select the valid option&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;you have an incorrect Pin&quot;" newline="True"/>
+                    <output expression="&quot;please enter correct Pin&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
