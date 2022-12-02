@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22047"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:48:11 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NzsyMDIyMjNNQVlDMDA4NDsyMDIyLTEyLTAyOzA5OjI5OjI5IEFNOzMwNzU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NzsyMDIyMjNNQVlDMDA4NDsyMDIyLTEyLTAyOzA5OjQ4OjExIEFNOzI7MzE3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text=" here we are declaring n,count,factorial "/>
+            <declare name="n, count, factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;enter the value for which you want value of factorial&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="here we are using for loop"/>
+            <for variable="count" start="1" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*count"/>
+            </for>
+            <output expression="&quot;the factorial of the given number is&quot;&amp;factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
