@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="vamsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:59:39 AM"/>
+        <attribute name="created" value="dmFtc2k7VkFNU0lfUEM7MjAyMi0xMi0wOTswOTo0NToyMyBBTTsyNDQw"/>
+        <attribute name="edited" value="dmFtc2k7VkFNU0lfUEM7MjAyMi0xMi0wOTswOTo1OTozOSBBTTsyOzI1NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="here we are declaring va by using array of size 10"/>
+            <declare name="va" type="Integer" array="True" size="10"/>
+            <declare name="inte, in" type="Integer" array="False" size=""/>
+            <comment text="here we are using forloop"/>
+            <for variable="inte" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;enter the values &quot;" newline="True"/>
+                <input variable="in"/>
+                <assign variable="va[inte]" expression="in"/>
+            </for>
+            <output expression="&quot;array contents &quot;" newline="True"/>
+            <comment text="here we are using forloop"/>
+            <for variable="inte" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;the contents of your arrays are &quot; &amp;va[inte]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

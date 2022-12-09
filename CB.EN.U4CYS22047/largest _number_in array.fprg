@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rushy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:32:02 AM"/>
+        <attribute name="created" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEyLTA5OzEwOjM0OjAyIEFNOzI1Njk="/>
+        <attribute name="edited" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEyLTA5OzExOjMyOjAyIEFNOzExOzI3MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This is a programme which finds the greatest value given in an array"/>
+            <declare name="index, large, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements in array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <comment text="for loop is used to assign the values in the array"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the element in a[&quot;&amp;index&amp;&quot;]&quot;" newline="True"/>
+                <input variable="a[index]"/>
+            </for>
+            <comment text="assuming a value t get the end result i.e, the largest integer"/>
+            <assign variable="large" expression="a[0]"/>
+            <comment text="for loop is used to check the condition to all the elements in the array"/>
+            <for variable="index" start="1" end="4" direction="inc" step="1">
+                <if expression="large&lt;a[index]">
+                    <then>
+                        <assign variable="large" expression="a[index]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The largest number in the array is &quot;&amp;large" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
